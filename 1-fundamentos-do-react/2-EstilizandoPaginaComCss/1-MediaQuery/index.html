@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: #f9f9f9;
+        }
+
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+        }
+
+        .asidebar{
+            height: 100vh;
+            width: 10%;
+            background-color: bisque;
+        }
+        
+        .flex{
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: #5c139f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        @media (max-width: 450px){
+            body{
+                background-color: rgb(198, 207, 197);
+            }
+            .flex{
+                flex-direction: column;
+                align-items: center;
+            }
+            .item{
+                width: 150px;
+                height: 150px;
+                margin: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Flexbox</h2>
+    <div class="container">
+        <aside class="asidebar">A</aside>
+        <div class="flex">
+            <div class="item">a</div>
+            <div class="item">b</div>
+            <div class="item">c</div>
+            <div class="item">d</div>
+            <div class="item">e</div>
+        </div>
+    </div>
+    
+</body>
+</html>
